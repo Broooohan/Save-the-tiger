@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save TIGER</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&family=Yusei+Magic&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background: url('/tiger2.jpg');
+            margin: 0px;
+            padding: 0px;
+            color: white;
+        }
+        .left{
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+        .mid{
+            display: block;
+            /* border: 2px solid red; */
+            width: 70%;
+            margin: 15px auto;
+        }
+        .right{
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            right: 15px;
+            top: 15px;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 30px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 1px 25px;
+            font-family: 'Yeon Sung', cursive;
+            font-family: 'Yusei Magic', sans-serif;
+            
+           
+        }
+        .navbar li :hover,.navbar li a.active
+        {
+            color:gray;
+            text-decoration: underline;
+        }
+        .left img{
+            width: 91px;
+        }
+        #x1{
+            display: inline-block;
+            position: absolute;
+            top: 70px;
+            left:350px;
+            font-size: 70px;
+            font-family: 'Merriweather', serif;
+        }
+        #x2{
+            display: inline-block;
+            position: absolute;
+            top: 210px;
+            left:470px;
+            font-size: 20px;
+        }
+        .btn{
+            padding: 5px;
+            margin: 18px 0px;
+            border-radius: 13px;
+            cursor: pointer;
+        }
+        .cont{
+            border: 5px solid rgb(27, 17, 17);
+            display: block;
+            width: 450px;
+            height: 280px;
+            margin: 190px 150px;
+            
+        }
+        .form1 input{
+            padding: 14px;
+            text-align: center;
+            margin: 10px 100px;
+            display: block;
+            box-sizing: border-box;
+            width: 300px;
+            height: 25px;
+            border-radius: 15px;
+            font-family: 'Yusei Magic', sans-serif;
+        }
+        #y{
+            text-align: center;
+        }
+        #y1{
+            text-align: center;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="head">
+        <div class="left">
+            <img src="/tigerr.JPG" alt="">
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+               <li><a href="#" class="active">HOME</a></li>
+               <li><a href="#">OUR TEAM</a></li>
+               <li><a href="#">RAISE FUND</a></li>
+               <li><a href="#">ABOUT</a></li>
+               <li><a href="#">CONTACT US</a></li>
+           </ul>
+        </div>
+        <div class="right">
+            <button class="btn" >CALL US</button>
+            <button class="btn">ASK QUERY</button>
+        </div>
+    </header>
+    <h1 id="x1">SAVE THE TIGER</h1>
+    <div id="x2"><em>"Let's bring back the lost beauty"</em></div>
+    <div class="cont">
+        <h2 id="y">REGISTER HERE</h2>
+        <form action="backend.php">
+        <div class="form1">
+            <input type="text" name="" placeholder="Enter your Name">
+        </div>
+        <div class="form1">
+            <input type="email" name="" placeholder="Enter your E-mail">
+        </div>
+        <div class="form1">
+            <input type="number" name="" placeholder="FUNDS we can expect">
+        </div>
+        <div class="form1">
+            <input type="number" name="" placeholder="Phone number">
+        </div>
+        
+        <div id="y1">
+        <input type="submit" value="SUBMIT">
+        </div>
+        </form>
+    </div>
+</body>
+</html>
